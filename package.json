@@ -18,7 +18,8 @@
     "prompt-lite": "0.1.x",
     "bitstamp": "0.0.4",
     "async": "0.2.x",
-    "line-reader": "0.2.x"
+    "line-reader": "0.2.x",
+    "btcchina": "*"
   },
   "engines": { "node": "0.10.x" },
   "repository": {

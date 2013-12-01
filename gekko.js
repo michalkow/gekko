@@ -58,9 +58,11 @@ if(config.normal && config.normal.enabled) {
 // trade information.
 // 
 var provider = config.watch.exchange.toLowerCase();
-if(provider === 'btce') {
+if(provider === 'btce' || provider === 'btcchina') {
   // we can't fetch historical data from btce directly so we use bitcoincharts
   // @link http://bitcoincharts.com/about/markets-api/
+  // btcchina symbol on bitcoin charts fix
+  if(provider === 'btcchina') provider = 'btcn';
   config.watch.market = provider;
   provider = 'bitcoincharts';
 }

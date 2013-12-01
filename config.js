@@ -28,8 +28,8 @@ config.EMA = {
 // Monitor the live market
 config.normal = {
   enabled: true,
-  exchange: 'MtGox', // 'MtGox', 'BTCe' or 'Bitstamp'
-  currency: 'USD',
+  exchange: 'BTCChina', // 'MtGox', 'BTCe', 'BTCChina' or 'Bitstamp'
+  currency: 'CNY',
   asset: 'BTC',
   tradingEnabled: false,
   key: '',
@@ -109,8 +109,8 @@ config.backtest = {
 
 // monitor what market?
 config.watch = {
-  exchange: 'MtGox',
-  currency: 'USD',
+  exchange: 'BTCChina',
+  currency: 'CNY',
   asset: 'BTC'
 }
 
@@ -121,6 +121,14 @@ config.traders = [
     key: '',
     secret: '',
     currency: 'USD',
+    asset: 'BTC',
+    enabled: false
+  },
+  {
+    exchange: 'BTCChina',
+    key: '',
+    secret: '',
+    currency: 'CNY',
     asset: 'BTC',
     enabled: false
   },
