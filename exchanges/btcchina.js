@@ -1,4 +1,4 @@
-var BTCChina = require('./btcchina.js');
+var BTCChina = require('btcchina');
 
 var moment = require('moment');
 var util = require('../util');
@@ -12,7 +12,7 @@ var Trader = function(config) {
 
   _.bindAll(this);
 
-  this.btcchina = new BTCChina(key, secret);
+  this.btcchina = new BTCChina(this.key, this.secret);
 }
 
 Trader.prototype.buy = function(amount, price, callback) {
