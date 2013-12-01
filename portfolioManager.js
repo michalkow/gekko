@@ -100,6 +100,15 @@ Manager.prototype.checkExchange = function() {
       assets: ['BTC'],
       requires: ['key', 'secret'],
       minimalOrder: { amount: 0.01, unit: 'asset' }
+    },    
+    {
+      name: 'btcchina',
+      direct: false,
+      infinityOrder: false,
+      currencies: ['CNY'],
+      assets: ['BTC'],
+      requires: ['key', 'secret'],
+      minimalOrder: { amount: 0.01, unit: 'currency' }
     },
     {
       name: 'bitstamp',

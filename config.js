@@ -32,8 +32,8 @@ config.normal = {
   currency: 'CNY',
   asset: 'BTC',
   tradingEnabled: false,
-  key: '',
-  secret: '',
+  key: '50eb0116-b932-41da-a255-ff48d8056ef0',
+  secret: 'b7c0badd-baa9-44e9-b7f8-c9006dde3f26',
 }
 
 // example Bitstamp Config:
